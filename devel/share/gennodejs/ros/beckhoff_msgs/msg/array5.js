@@ -1,0 +1,91 @@
+// Auto-generated. Do not edit!
+
+// (in-package beckhoff_msgs.msg)
+
+
+"use strict";
+
+const _serializer = _ros_msg_utils.Serialize;
+const _arraySerializer = _serializer.Array;
+const _deserializer = _ros_msg_utils.Deserialize;
+const _arrayDeserializer = _deserializer.Array;
+const _finder = _ros_msg_utils.Find;
+const _getByteLength = _ros_msg_utils.getByteLength;
+
+//-----------------------------------------------------------
+
+class array5 {
+  constructor(initObj={}) {
+    if (initObj === null) {
+      // initObj === null is a special case for deserialization where we don't initialize fields
+      this.data = null;
+    }
+    else {
+      if (initObj.hasOwnProperty('data')) {
+        this.data = initObj.data
+      }
+      else {
+        this.data = new Array(5).fill(0);
+      }
+    }
+  }
+
+  static serialize(obj, buffer, bufferOffset) {
+    // Serializes a message object of type array5
+    // Check that the constant length array field [data] has the right length
+    if (obj.data.length !== 5) {
+      throw new Error('Unable to serialize array field data - length must be 5')
+    }
+    // Serialize message field [data]
+    bufferOffset = _arraySerializer.float64(obj.data, buffer, bufferOffset, 5);
+    return bufferOffset;
+  }
+
+  static deserialize(buffer, bufferOffset=[0]) {
+    //deserializes a message object of type array5
+    let len;
+    let data = new array5(null);
+    // Deserialize message field [data]
+    data.data = _arrayDeserializer.float64(buffer, bufferOffset, 5)
+    return data;
+  }
+
+  static getMessageSize(object) {
+    return 40;
+  }
+
+  static datatype() {
+    // Returns string type for a message object
+    return 'beckhoff_msgs/array5';
+  }
+
+  static md5sum() {
+    //Returns md5sum for a message object
+    return 'ebfb6f4de85d3d955b5442f86a122aa7';
+  }
+
+  static messageDefinition() {
+    // Returns full string definition for message
+    return `
+    float64[5] data
+    `;
+  }
+
+  static Resolve(msg) {
+    // deep-construct a valid message object instance of whatever was passed in
+    if (typeof msg !== 'object' || msg === null) {
+      msg = {};
+    }
+    const resolved = new array5(null);
+    if (msg.data !== undefined) {
+      resolved.data = msg.data;
+    }
+    else {
+      resolved.data = new Array(5).fill(0)
+    }
+
+    return resolved;
+    }
+};
+
+module.exports = array5;
