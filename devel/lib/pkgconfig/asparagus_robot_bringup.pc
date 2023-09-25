@@ -1,0 +1,8 @@
+prefix=/home/student/Asparagus_project/ros_proj/devel
+
+Name: asparagus_robot_bringup
+Description: Description of asparagus_robot_bringup
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

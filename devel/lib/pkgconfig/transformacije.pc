@@ -1,0 +1,8 @@
+prefix=/home/student/Asparagus_project/ros_proj/devel
+
+Name: transformacije
+Description: Description of transformacije
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

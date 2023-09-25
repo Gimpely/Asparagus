@@ -1,0 +1,8 @@
+prefix=/home/student/Asparagus_project/ros_proj/devel
+
+Name: plc_to_pc_pub_cpp
+Description: Description of plc_to_pc_pub_cpp
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs

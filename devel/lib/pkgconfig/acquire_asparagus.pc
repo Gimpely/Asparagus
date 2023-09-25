@@ -1,0 +1,8 @@
+prefix=/home/student/Asparagus_project/ros_proj/devel
+
+Name: acquire_asparagus
+Description: Description of acquire_asparagus
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
