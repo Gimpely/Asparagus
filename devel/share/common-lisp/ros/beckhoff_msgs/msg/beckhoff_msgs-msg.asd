@@ -1,0 +1,23 @@
+
+(cl:in-package :asdf)
+
+(defsystem "beckhoff_msgs-msg"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils )
+  :components ((:file "_package")
+    (:file "CmdRobot" :depends-on ("_package_CmdRobot"))
+    (:file "_package_CmdRobot" :depends-on ("_package"))
+    (:file "CmdTracks" :depends-on ("_package_CmdTracks"))
+    (:file "_package_CmdTracks" :depends-on ("_package"))
+    (:file "JointStateRobot" :depends-on ("_package_JointStateRobot"))
+    (:file "_package_JointStateRobot" :depends-on ("_package"))
+    (:file "Vector_q5" :depends-on ("_package_Vector_q5"))
+    (:file "_package_Vector_q5" :depends-on ("_package"))
+    (:file "array5" :depends-on ("_package_array5"))
+    (:file "_package_array5" :depends-on ("_package"))
+    (:file "catReceive" :depends-on ("_package_catReceive"))
+    (:file "_package_catReceive" :depends-on ("_package"))
+    (:file "catSend" :depends-on ("_package_catSend"))
+    (:file "_package_catSend" :depends-on ("_package"))
+    (:file "dataArray" :depends-on ("_package_dataArray"))
+    (:file "_package_dataArray" :depends-on ("_package"))
+  ))
