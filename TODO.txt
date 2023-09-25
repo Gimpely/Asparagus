@@ -1,0 +1,8 @@
+**** 29.07.22 ****
+
+Izločanje prijemala iz točk pobiranja -> Lahko določimo, da prijemalo ne sega v vidno polje laserskega skenerja.
+
+FIFO register -> najprej poberemo prvo zaznane šparglje
+
+
+
