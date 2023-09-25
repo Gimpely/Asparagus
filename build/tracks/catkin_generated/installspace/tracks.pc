@@ -1,0 +1,8 @@
+prefix=/home/student/Asparagus_project/ros_proj/install
+
+Name: tracks
+Description: Description of tracks
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

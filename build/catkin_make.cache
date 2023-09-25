@@ -1,0 +1,2 @@
+acquire_asparagus:asparagus_robot_bringup:beckhoff_comm:beckhoff_msgs:delta_robot:geometry2/geometry2:geometry2/test_tf2:geometry2/tf2:geometry2/tf2_bullet:geometry2/tf2_eigen:geometry2/tf2_geometry_msgs:geometry2/tf2_kdl:geometry2/tf2_msgs:geometry2/tf2_py:geometry2/tf2_ros:geometry2/tf2_sensor_msgs:geometry2/tf2_tools:pc_to_plc_sub_py:plc_to_pc_pub_cpp:tracks:transformacije/transformacije:transformations
+-DCATKIN_DEVEL_PREFIX=/home/student/Asparagus_project/ros_proj/devel -DCMAKE_INSTALL_PREFIX=/home/student/Asparagus_project/ros_proj/install -G Unix Makefiles
